@@ -71,11 +71,11 @@
         - #PLAYER
       -->
 
-      <div class="player">
+      <div class="player" style="overflow-x: hidden;">
         <div class="container">
 
           <figure class="music-banner">
-            <img src="https://cdn.randommeaninglesscharacters.com/music-albums/Ahmad_Jamal_-_Jamalca_(1974).jpeg" width="800" height="800" alt="Jamalca Album Poster"
+            <img src="https://cdn.randommeaninglesscharacters.com/music-albums/Ahmad_Jamal_-_Jamalca_(1974).jpeg" width="100%" height="100%" alt="Jamalca Album Poster"
               class="img-cover" data-player-banner>
           </figure>
 
@@ -83,19 +83,57 @@
 
             <h2 class="headline-sm" data-title>Jamalca</h2>
 
-            <p class="label-lg label-wrapper wrapper">
-              <span data-album>Jamalca</span>
+            <p class="label-md artist"><span data-artist>Ahmad Jamal</span><span data-year>1974</span></p>
+            <!-- It's not a certified lillian skinner edit without loads of shitty inline CSS -->
+            <div style="margin: 4px, 4px;padding: 0px;width: 100%;overflow-x: auto;overflow-y: hidden;white-space: nowrap;text-align: left;">
+              <table>
+                <tr>
+                  <th data-track-1>CONTENT1</th>
+                  <th data-track-6>CONTENT6</th>
+                  <th data-track-11>CONTENT11</th>
+                  <th data-track-16>CONTENT16</th>
+                  <th data-track-21>CONTENT21</th>
+                </tr>
+                <tr>
+                  <th data-track-2>CONTENT2</th>
+                  <th data-track-7>CONTENT7</th>
+                  <th data-track-12>CONTENT12</th>
+                  <th data-track-17>CONTENT17</th>
+                  <th data-track-22>CONTENT22</th>
+                </tr>
+                <tr>
+                  <th data-track-3>CONTENT3</th>
+                  <th data-track-8>CONTENT8</th>
+                  <th data-track-13>CONTENT13</th>
+                  <th data-track-18>CONTENT18</th>
+                  <th data-track-23>CONTENT23</th>
+                </tr>
+                <tr>
+                  <th data-track-4>CONTENT4</th>
+                  <th data-track-9>CONTENT9</th>
+                  <th data-track-14>CONTENT14</th>
+                  <th data-track-19>CONTENT19</th>
+                  <th data-track-24>CONTENT24</th>
+                </tr>
+                <tr>
+                  <th data-track-5>CONTENT5</th>
+                  <th data-track-10>CONTENT10</th>
+                  <th data-track-15>CONTENT15</th>
+                  <th data-track-20>CONTENT20</th>
+                  <th data-track-25>CONTENT25</th>
+                </tr>
+              </table>
+            </div>
 
-              <span data-year>1974</span>
-            </p>
 
-            <p class="label-md artist" data-artist>Ahmad Jamal</p>
+
+
 
             <div class="seek-control">
 
               <div>
                 <div class="range-wrapper">
-                  <input type="range" step="1" max="60" value="0" class="range" data-range data-seek>
+                  <input type="range" step="any" value="0" class="range" data-range data-seek>
 
                   <div class="range-fill" data-range-fill></div>
                 </div>
@@ -113,7 +151,7 @@
                 </button>
 
                 <div class="range-wrapper">
-                  <input type="range" step="0.05" max="1" value="1" class="range" data-range data-volume>
+                  <input type="range" step="any" max="1" value="1" class="range" data-range data-volume>
 
                   <div class="range-fill" data-range-fill></div>
                 </div>

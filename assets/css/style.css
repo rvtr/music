@@ -8,6 +8,10 @@
 
 
 
+/** My garbage is here*/
+th {
+  padding-right: 20px;
+}
 
 
 /*-----------------------------------*\
@@ -58,7 +62,7 @@
 
   --ff-inter: 'Inter', sans-serif;
 
-  --headline-sm: 2.4rem;
+  --headline-sm: 2.0rem;
   --title-lg: 2.2rem;
   --label-lg: 1.4rem;
   --label-md: 1.2rem;
@@ -268,8 +272,12 @@ body:hover::-webkit-scrollbar-thumb { background-color: var(--surface-variant); 
 .volume { display: none; }
 
 .player {
-  --padding: 24px;
-  background-image: var(--gradient);
+  --padding: 48px;
+  background-image: url('../../bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-image: var(--gradient); */
   padding: var(--padding);
   padding-block-start: calc(64px + var(--padding));
   min-height: 100vh;
@@ -288,7 +296,7 @@ body:hover::-webkit-scrollbar-thumb { background-color: var(--surface-variant); 
 
 .music-banner {
   aspect-ratio: 1 / 1;
-  background-color: var(--surface-variant);
+  background-color: rgb(64, 64, 64, 0.9);
   max-width: 400px;
   margin-inline: auto;
   align-self: center;
@@ -590,14 +598,19 @@ body:hover::-webkit-scrollbar-thumb { background-color: var(--surface-variant); 
   }
 
   .music-content {
+    background-color: rgb(64, 64, 64, 0.9);
+    border-radius: var(--radius-24);
+    padding-left:5%;
+    padding-right:5%;
+    padding-bottom:5%;
     display: flex;
     flex-direction: column;
-    padding-block-start: 48px;
+    padding-block-start: 24px;
     min-width: 100%;
   }
 
   .music-content :is(.headline-sm, .label-lg, .label-md) {
-    max-width: 85%;
+    /*max-width: 85%;*/
   }
 
   .label-wrapper {
